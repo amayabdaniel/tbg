@@ -1,8 +1,8 @@
 {
-  "name": "tbg",
+  "name": "tbgv0",
   "version": "0.1.0",
   "bin": {
-    "tbg": "bin/tbg.js"
+    "tbgv0": "bin/tbgv0.js"
   },
   "scripts": {
     "build": "tsc",

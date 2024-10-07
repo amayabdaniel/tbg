@@ -1,29 +1,29 @@
 {
   "version": "38.0.1",
   "artifacts": {
-    "TbgStack.assets": {
+    "Tbgv0Stack.assets": {
       "type": "cdk:asset-manifest",
       "properties": {
-        "file": "TbgStack.assets.json",
+        "file": "Tbgv0Stack.assets.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version"
       }
     },
-    "TbgStack": {
+    "Tbgv0Stack": {
       "type": "aws:cloudformation:stack",
       "environment": "aws://unknown-account/unknown-region",
       "properties": {
-        "templateFile": "TbgStack.template.json",
+        "templateFile": "Tbgv0Stack.template.json",
         "terminationProtection": false,
         "validateOnSynth": false,
         "notificationArns": [],
         "assumeRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-deploy-role-${AWS::AccountId}-${AWS::Region}",
         "cloudFormationExecutionRoleArn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-cfn-exec-role-${AWS::AccountId}-${AWS::Region}",
-        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/cd5c57de4733aa82ed312bce14482640f06a74fc3c82628e6bc534de5ad2bf16.json",
+        "stackTemplateAssetObjectUrl": "s3://cdk-hnb659fds-assets-${AWS::AccountId}-${AWS::Region}/5f86c32141bc2c2901265951400104d3ed34bfe4af68067e98a9b0e52eeffc0b.json",
         "requiresBootstrapStackVersion": 6,
         "bootstrapStackVersionSsmParameter": "/cdk-bootstrap/hnb659fds/version",
         "additionalDependencies": [
-          "TbgStack.assets"
+          "Tbgv0Stack.assets"
         ],
         "lookupRole": {
           "arn": "arn:${AWS::Partition}:iam::${AWS::AccountId}:role/cdk-hnb659fds-lookup-role-${AWS::AccountId}-${AWS::Region}",
@@ -32,131 +32,131 @@
         }
       },
       "dependencies": [
-        "TbgStack.assets"
+        "Tbgv0Stack.assets"
       ],
       "metadata": {
-        "/TbgStack/tbgbucket/Resource": [
+        "/Tbgv0Stack/tbgbucket/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "tbgbucket71A783B1"
           }
         ],
-        "/TbgStack/tbgbucket/Policy/Resource": [
+        "/Tbgv0Stack/tbgbucket/Policy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "tbgbucketPolicyD5641183"
           }
         ],
-        "/TbgStack/tbgbucket/AutoDeleteObjectsCustomResource/Default": [
+        "/Tbgv0Stack/tbgbucket/AutoDeleteObjectsCustomResource/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "tbgbucketAutoDeleteObjectsCustomResource57DDF0A2"
           }
         ],
-        "/TbgStack/tbgbucket/Notifications/Resource": [
+        "/Tbgv0Stack/tbgbucket/Notifications/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "tbgbucketNotificationsBA10351A"
           }
         ],
-        "/TbgStack/tbgbucket/AllowBucketNotificationsToTbgStackMyLambdaFunctionA9675725": [
+        "/Tbgv0Stack/tbgbucket/AllowBucketNotificationsToTbgv0StackMyLambdaFunction1F309002": [
           {
             "type": "aws:cdk:logicalId",
-            "data": "tbgbucketAllowBucketNotificationsToTbgStackMyLambdaFunctionA967572502669DF3"
+            "data": "tbgbucketAllowBucketNotificationsToTbgv0StackMyLambdaFunction1F30900264964B73"
           }
         ],
-        "/TbgStack/LatestNodeRuntimeMap": [
+        "/Tbgv0Stack/LatestNodeRuntimeMap": [
           {
             "type": "aws:cdk:logicalId",
             "data": "LatestNodeRuntimeMap"
           }
         ],
-        "/TbgStack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
+        "/Tbgv0Stack/Custom::S3AutoDeleteObjectsCustomResourceProvider": [
           {
             "type": "aws:cdk:is-custom-resource-handler-customResourceProvider",
             "data": true
           }
         ],
-        "/TbgStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
+        "/Tbgv0Stack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Role": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomS3AutoDeleteObjectsCustomResourceProviderRole3B1BD092"
           }
         ],
-        "/TbgStack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
+        "/Tbgv0Stack/Custom::S3AutoDeleteObjectsCustomResourceProvider/Handler": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CustomS3AutoDeleteObjectsCustomResourceProviderHandler9D90184F"
           }
         ],
-        "/TbgStack/MyLambdaFunction/ServiceRole/Resource": [
+        "/Tbgv0Stack/MyLambdaFunction/ServiceRole/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "MyLambdaFunctionServiceRole313A4D46"
           }
         ],
-        "/TbgStack/MyLambdaFunction/ServiceRole/DefaultPolicy/Resource": [
+        "/Tbgv0Stack/MyLambdaFunction/ServiceRole/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "MyLambdaFunctionServiceRoleDefaultPolicy23555F9E"
           }
         ],
-        "/TbgStack/MyLambdaFunction/Resource": [
+        "/Tbgv0Stack/MyLambdaFunction/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "MyLambdaFunction67CCA873"
           }
         ],
-        "/TbgStack/MyLambdaFunction/AllowS3Invoke": [
+        "/Tbgv0Stack/MyLambdaFunction/AllowS3Invoke": [
           {
             "type": "aws:cdk:logicalId",
             "data": "MyLambdaFunctionAllowS3Invoke00EB9F73"
           }
         ],
-        "/TbgStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
+        "/Tbgv0Stack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleB6FB88EC"
           }
         ],
-        "/TbgStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
+        "/Tbgv0Stack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Role/DefaultPolicy/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db834RoleDefaultPolicy2CF63D36"
           }
         ],
-        "/TbgStack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
+        "/Tbgv0Stack/BucketNotificationsHandler050a0587b7544547bf325f094a3db834/Resource": [
           {
             "type": "aws:cdk:logicalId",
             "data": "BucketNotificationsHandler050a0587b7544547bf325f094a3db8347ECC3691"
           }
         ],
-        "/TbgStack/CDKMetadata/Default": [
+        "/Tbgv0Stack/CDKMetadata/Default": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadata"
           }
         ],
-        "/TbgStack/CDKMetadata/Condition": [
+        "/Tbgv0Stack/CDKMetadata/Condition": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CDKMetadataAvailable"
           }
         ],
-        "/TbgStack/BootstrapVersion": [
+        "/Tbgv0Stack/BootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
             "data": "BootstrapVersion"
           }
         ],
-        "/TbgStack/CheckBootstrapVersion": [
+        "/Tbgv0Stack/CheckBootstrapVersion": [
           {
             "type": "aws:cdk:logicalId",
             "data": "CheckBootstrapVersion"
           }
         ]
       },
-      "displayName": "TbgStack"
+      "displayName": "Tbgv0Stack"
     },
     "Tree": {
       "type": "cdk:tree",

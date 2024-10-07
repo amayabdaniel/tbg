@@ -1,13 +1,13 @@
 // import * as cdk from 'aws-cdk-lib';
 // import { Template } from 'aws-cdk-lib/assertions';
-// import * as Tbg from '../lib/tbg-stack';
+// import * as Tbgv0 from '../lib/tbgv0-stack';
 
 // example test. To run these tests, uncomment this file along with the
-// example resource in lib/tbg-stack.ts
+// example resource in lib/tbgv0-stack.ts
 test('SQS Queue Created', () => {
 //   const app = new cdk.App();
 //     // WHEN
-//   const stack = new Tbg.TbgStack(app, 'MyTestStack');
+//   const stack = new Tbgv0.Tbgv0Stack(app, 'MyTestStack');
 //     // THEN
 //   const template = Template.fromStack(stack);
 

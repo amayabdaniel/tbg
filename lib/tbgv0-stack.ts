@@ -6,7 +6,7 @@ import * as s3n from 'aws-cdk-lib/aws-s3-notifications';
 import * as path from 'path';
 import * as iam from 'aws-cdk-lib/aws-iam';
 
-export class TbgStack extends cdk.Stack {
+export class Tbgv0Stack extends cdk.Stack {
   constructor(scope: Construct, id: string, props?: cdk.StackProps) {
     super(scope, id, props);
 
